@@ -1,5 +1,4 @@
 <?php
-
 /**
  * The public-facing functionality of the plugin.
  *
@@ -72,7 +71,7 @@ class Wp_Rest_Comment_Public {
         $this->version = $version;
 
 		$this->route_namespace = 'wp/v2';
-		$this->route_base = 'comment/create';
+		$this->route_base = 'comments/create';
 
     }
 
@@ -101,8 +100,8 @@ class Wp_Rest_Comment_Public {
 	 * @return  @return WP_REST_Response|WP_Error Response object on success, or error object on failure.
 	 */
 	public function create_comment($request = null) {
-        
-        $parameters = $request->get_json_params();
+
+		$parameters = $request->get_json_params();
 		$post_id = sanitize_text_field($parameters['post']);
 
         if(! empty($request['id'])){
@@ -271,8 +270,6 @@ class Wp_Rest_Comment_Public {
 		$response->header( 'Location', rest_url( sprintf( '%s/%s/%d', $this->route_namespace, $this->route_base, $comment_id ) ) );
 
 		return $response;
-
-	
     }
 
 	/**

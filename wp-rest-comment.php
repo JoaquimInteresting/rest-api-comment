@@ -16,17 +16,18 @@
     * along with WP REST Comment. If not, see http://www.gnu.org/licenses/gpl-2.0.html
     *
     * @package           wp-rest-comment
-    * @author            Workcompany, Appsdabanda, joaquiminteresting
+    * @author            joaquiminteresting
     * @copyright         2021 workcompany & Appsdabanda
     * @license           GPL - 2.0-or-later
     * @since             1.0.0
     * 
-    * @wordpress-plugin
     * Plugin Name:       WP REST Comment
     * Description:       Create comments via REST API, this plugin allows comments from mobile, desktop and other web Applications
     * Version:           1.0.0
     * Requires at least: 5.2.0
-    * Author:            Workcompany, Appsdabanda, joaquiminteresting
+    * Tested up to:      5.8.1
+    * Requires PHP:      7.0
+    * Author:            joaquiminteresting
     * Author URI:        https://appsdabanda.com
     * License:           GPL v2 or later
     * License URI:       http://www.gnu.org/licenses/gpl-2.0.html
