@@ -1,11 +1,11 @@
-# WP REST Comment
+<h1 style="text-align:center;">WP REST Comment</h1>
 
 * Contributors: joaquiminteresting
 * Tags: wp, rest, api, rest api, comment, json
-* Requires at least: 5.2.12
+* Requires at least: 4.7.0
 * Tested up to: 5.8.1
-* Stable tag: 5.8
-* Requires PHP: 7.2.25
+* Requires PHP: 7.0
+* Stable tag: trunk
 * License: GPLv2 or later
 * License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -21,13 +21,13 @@ This plugin fulfils such requirement by extending the existing WordPress REST AP
 
 ## Requirements
 
-**Minimum PHP version: 7.2.25**
+**Minimum PHP version: 7.0**
 
-**Minimum Wordpress version: 5.2.12**
+**Minimum Wordpress version: 4.7.0**
 
 ## Installation
 
-[Download the zip file](https://github.com/JoaquimInteresting/archive/master.zip) and install it like any other WordPress plugin.
+Download the this repository and install it like any other WordPress plugin.
 
 Or clone this repo into your WordPress installation into the wp-content/plugins folder.
 
@@ -89,30 +89,8 @@ If successful, you should receive a response with the data of the created commen
 ```Json
 {
   "id": "[comment id]",
-  "post": "[comment post id]",
-  "parent": "[comment parent id (if it is a reply)]",
-  "author": 0,
-  "author_name": "[Comment Author Name]",
-  "author_email": "[Comment Author email]",
-  "author_url": "",
-  "author_ip": "[IP Address]",
-  "author_user_agent": "[Rest Client agent]",
-  "date": "[comment date]",
-  "date_gmt": "[comment date in gmt]",
-  "content": {
-    "rendered": "[comment content in HTML]",
-    "raw": "Comment Content"
-  },
-  "link": "[link url]",
   "status": "[comment status]",
-  "type": "comment",
-  "author_avatar_urls": {
-    "24": "http:\/\/1.gravatar.com\/avatar\/1b8bac52988218d382fa50f2715f93af?s=24&d=mm&r=g",
-    "48": "http:\/\/1.gravatar.com\/avatar\/1b8bac52988218d382fa50f2715f93af?s=48&d=mm&r=g",
-    "96": "http:\/\/1.gravatar.com\/avatar\/1b8bac52988218d382fa50f2715f93af?s=96&d=mm&r=g"
-  },
-  "_links": {
-  }
+  "message":"[server response message]"
 }
 ```
 
@@ -166,11 +144,21 @@ An sample REST API POST request using [WP REST Comment](https://github.com/Joaqu
 
 ## Changelog
 
+### 1.0.1
+
+* Now it requires at least wordpress version 4.7
+* Response was updated
+* README was Updated
+* Bug fixed
 ### 1.0.0
 
-* Initial Release. 
-* Create comment.
-* Reply comment. 
+* Initial Release 
+* Create comment
+* Reply comment 
+
+## Upgrade Notice
+
+Nothing to worry! 
 
 ## Contact 
 

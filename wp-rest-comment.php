@@ -23,8 +23,8 @@
     * 
     * Plugin Name:       WP REST Comment
     * Description:       Create comments via REST API, this plugin allows comments from mobile, desktop and other web Applications
-    * Version:           1.0.0
-    * Requires at least: 5.2.0
+    * Version:           1.0.1
+    * Requires at least: 4.7.0
     * Tested up to:      5.8.1
     * Requires PHP:      7.0
     * Author:            joaquiminteresting
@@ -41,10 +41,10 @@
     }
 
     /**
-    * Currently plugin version.
+    * Currently plugin version 1.0.1.
     * Start at version 1.0.0 
     */
-    define('WP_REST_COMMENT_VERSION', '1.0.0');
+    define('WP_REST_COMMENT_VERSION', '1.0.1');
 
     /**
     * The code that runs during plugin activation.

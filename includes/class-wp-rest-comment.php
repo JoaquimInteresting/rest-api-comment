@@ -70,7 +70,7 @@ class Wp_Rest_Comment {
 		if (defined('WP_REST_COMMENT_VERSION')) {
 			$this->version = WP_REST_COMMENT_VERSION;
 		} else {
-			$this->version = '1.0.0';
+			$this->version = '1.0.1';
 		}
 		$this->plugin_name = 'wp-rest-comment';
 
