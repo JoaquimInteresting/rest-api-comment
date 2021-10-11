@@ -5,8 +5,8 @@
  * @link       https://appsdabanda.com
  * @since      1.0.0
  *
- * @package    Wp_Rest_Comment
- * @subpackage Wp_Rest_Comment/public
+ * @package    Rest_Api_Comment
+ * @subpackage Rest_Api_Comment/public
  */
 
 /**
@@ -15,8 +15,8 @@
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the public-facing stylesheet and JavaScript.
  *
- * @package    Wp_Rest_Comment
- * @subpackage Wp_Rest_Comment/public
+ * @package    Rest_Api_Comment
+ * @subpackage Rest_Api_Comment/public
  * @author     Workcompany <support@appsdabanda.com>
  */
 class Wp_Rest_Comment_Public {
@@ -261,7 +261,7 @@ class Wp_Rest_Comment_Public {
 
 		$response['id'] = $comment->comment_ID;
 		$response['status'] = $this->prepare_status_response( $comment->comment_approved );
-		$response['message'] = __("Comment was created successfully", "wp-rest-comment");
+		$response['message'] = __("Comment was created successfully", "rest-api-comment");
 
 		return new WP_REST_Response($response, 201);
     }

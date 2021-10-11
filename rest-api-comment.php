@@ -1,27 +1,27 @@
 <?php
     /**
-    * WP REST Comment
+    * REST API Comment
     *
-    * WP REST Comment is free software: you can redistribute it and/or modify
+    * REST API Comment is free software: you can redistribute it and/or modify
     * it under the terms of the GNU General Public License as published by
     * the Free Software Foundation, either version 2 of the License, or
     * any later version.
     *
-    * WP REST Comment is distributed in the hope that it will be useful,
+    * REST API Comment is distributed in the hope that it will be useful,
     * but WITHOUT ANY WARRANTY; without even the implied warranty of
     * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
     * GNU General Public License for more details.
     *
     * You should have received a copy of the GNU General Public License
-    * along with WP REST Comment. If not, see http://www.gnu.org/licenses/gpl-2.0.html
+    * along with REST API Comment. If not, see http://www.gnu.org/licenses/gpl-2.0.html
     *
-    * @package           wp-rest-comment
+    * @package           rest-api-comment
     * @author            joaquiminteresting
-    * @copyright         2021 workcompany & Appsdabanda
+    * @copyright         2021 Appsdabanda
     * @license           GPL - 2.0-or-later
     * @since             1.0.0
     * 
-    * Plugin Name:       WP REST Comment
+    * Plugin Name:       REST API Comment
     * Description:       Create comments via REST API, this plugin allows comments from mobile, desktop and other web Applications
     * Version:           1.0.1
     * Requires at least: 4.7.0
@@ -31,7 +31,7 @@
     * Author URI:        https://appsdabanda.com
     * License:           GPL v2 or later
     * License URI:       http://www.gnu.org/licenses/gpl-2.0.html
-    * Text Domain:       wp-rest-comment
+    * Text Domain:       rest-api-comment
     * Domain Path:       /languages
     */
 
@@ -44,7 +44,7 @@
     * Currently plugin version 1.0.1.
     * Start at version 1.0.0 
     */
-    define('WP_REST_COMMENT_VERSION', '1.0.1');
+    define('REST_API_COMMENT_VERSION', '1.0.1');
 
     /**
     * The code that runs during plugin activation.

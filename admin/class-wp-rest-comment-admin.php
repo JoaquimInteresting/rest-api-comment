@@ -6,8 +6,8 @@
  * @link       https://appsdabanda.com
  * @since      1.0.0
  *
- * @package    Wp_Rest_Comment
- * @subpackage Wp_Rest_Comment/admin
+ * @package    Rest_Api_Comment
+ * @subpackage Rest_Api_Comment/admin
  */
 
 /**
@@ -16,8 +16,8 @@
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the admin-specific stylesheet and JavaScript.
  *
- * @package    Wp_Rest_Comment
- * @subpackage Wp_Rest_Comment/admin
+ * @package    Rest_Api_Comment
+ * @subpackage Rest_Api_Comment/admin
  * @author     Workcompany, Appsdabanda, joaquiminteresting <support@appsdabanda.com>
  */
 class Wp_Rest_Comment_Admin {

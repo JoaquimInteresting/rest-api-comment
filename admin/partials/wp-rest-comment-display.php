@@ -8,8 +8,8 @@
  * @link       https://appsdabanda.com
  * @since      1.0.0
  *
- * @package    Wp_Rest_comment
- * @subpackage Wp_Rest_comment/admin/partials
+ * @package    Rest_Api_comment
+ * @subpackage Rest_Api_comment/admin/partials
  */
 ?>
 

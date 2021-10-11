@@ -1,4 +1,4 @@
-== WP REST Comment ==
+== REST API Comment ==
 Contributors: joaquiminteresting
 Donate link: https://appsdabanda.com/donate/
 Tags: wp, rest, api, rest api, comment, json
@@ -9,7 +9,7 @@ Stable tag: trunk
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-WP REST Comment adds in the 'Comment creation' function to the Wordpress REST API.
+REST API Comment adds in the 'Comment creation' function to the Wordpress REST API.
 
 == Description == 
 
@@ -126,7 +126,7 @@ To reply a comment follow you just need to add the field **parent** for the pare
 
 == Frequently Asked Questions ==
 
-= Why do I need WP REST Comments? = 
+= Why do I need REST API Comments? = 
 If you're planning on using your WordPress news website/blog as a Backend, and you're consuming RESTful api, you'll most probably need to **Create comments** and **Reply comments** via REST API. This is precisely what this plugin does.
 
 = Is it secure? =
@@ -137,7 +137,7 @@ Please create a ticket on the [support team](mailto:sopport@appsdabanda.com) or 
 
 == Screenshots ==
 
-1. This Screenshot is a sample REST API POST request using WP REST Comment, file name: screenshot-1.png, Located in /assets directory.
+1. This Screenshot is a sample REST API POST request using REST API Comment, file name: screenshot-1.png, Located in /assets directory.
 
 == Changelog ==
 
