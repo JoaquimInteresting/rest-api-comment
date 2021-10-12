@@ -50,28 +50,28 @@
     * The code that runs during plugin activation.
     * This action is documented in includes/class-wp-rest-comment-activator.php
     */
-    function activate_wp_rest_comment() {
-        require_once plugin_dir_path(__FILE__) . 'includes/class-wp-rest-comment-activator.php';
-        Wp_Rest_Comment_Activator::activate();
+    function activate_rest_api_comment() {
+        require_once plugin_dir_path(__FILE__) . 'includes/class-rest-api-comment-activator.php';
+        Rest_Api_Comment_Activator::activate();
     }
 
     /**
     * The code that runs during plugin deactivation.
     * This action is documented in includes/class-wp-rest-comment-deactivator.php
     */
-    function deactivate_wp_rest_comment() {
-        require_once plugin_dir_path(__FILE__) . 'includes/class-wp-rest-comment-deactivator.php';
-        Wp_Rest_Comment_Deactivator::deactivate();
+    function deactivate_rest_api_comment() {
+        require_once plugin_dir_path(__FILE__) . 'includes/class-rest-api-comment-deactivator.php';
+        Rest_api_Comment_Deactivator::deactivate();
     }
 
-    register_activation_hook(__FILE__, 'activate_wp_rest_comment');
-    register_deactivation_hook(__FILE__, 'deactivate_wp_rest_comment');
+    register_activation_hook(__FILE__, 'activate_rest_api_comment');
+    register_deactivation_hook(__FILE__, 'deactivate_rest_api_comment');
 
     /**
  * The core plugin class that is used to define internationalization,
  * admin-specific hooks, and public-facing site hooks.
  */
-require plugin_dir_path(__FILE__) . 'includes/class-wp-rest-comment.php';
+require plugin_dir_path(__FILE__) . 'includes/class-rest-api-comment.php';
 
 /**
  * Begins execution of the plugin.
@@ -82,12 +82,12 @@ require plugin_dir_path(__FILE__) . 'includes/class-wp-rest-comment.php';
  *
  * @since    1.0.0
  */
-function run_wp_rest_comment() {
+function run_rest_api_comment() {
 
-	$plugin = new Wp_Rest_Comment();
+	$plugin = new Rest_Api_Comment();
 	$plugin->run();
 
 }
-run_wp_rest_comment();
+run_rest_api_comment();
 
 ?>

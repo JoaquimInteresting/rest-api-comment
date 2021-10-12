@@ -6,8 +6,8 @@
  * @link       https://appsdabanda.com
  * @since      1.0.0
  *
- * @package    Wp_Rest_Comment
- * @subpackage Wp_Rest_Comment/includes
+ * @package    Rest_Api_Comment
+ * @subpackage Rest_Api_Comment/includes
  */
 
 /**
@@ -17,11 +17,11 @@
  * the plugin, and register them with the WordPress API. Call the
  * run function to execute the list of actions and filters.
  *
- * @package    Wp_Rest_Comment
- * @subpackage Wp_Rest_Comment/includes
+ * @package    Rest_Api_Comment
+ * @subpackage Rest_Api_Comment/includes
  * @author     Workcompany <support@appsdabanda.com>
  */
-class Wp_Rest_Comment_Loader {
+class Rest_Api_Comment_Loader {
 
 	/**
 	 * The array of actions registered with WordPress.

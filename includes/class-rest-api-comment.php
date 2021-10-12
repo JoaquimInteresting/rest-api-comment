@@ -9,8 +9,8 @@
  * @link       https://appsdabanda.com
  * @since      1.0.0
  *
- * @package    Wp_Rest_Comments
- * @subpackage Wp_Rest_Comments/includes
+ * @package    Rest_Api_Comments
+ * @subpackage Rest_Api_Comments/includes
  */
 
 /**
@@ -23,11 +23,11 @@
  * version of the plugin.
  *
  * @since      1.0.0
- * @package    Wp_Rest_Comments
- * @subpackage Wp_Rest_Comments/includes
+ * @package    Rest_Api_Comments
+ * @subpackage Rest_Api_Comments/includes
  * @author     workcompany, Appsdabanda, Joaquim Interesting <support@appsdabanda.com>
  */
-class Wp_Rest_Comment {
+class Rest_Api_Comment {
 
 	/**
 	 * The loader that's responsible for maintaining and registering all hooks that power
@@ -35,7 +35,7 @@ class Wp_Rest_Comment {
 	 *
 	 * @since    1.0.0
 	 * @access   protected
-	 * @var      Wp_Rest_Comment_Loader    $loader    Maintains and registers all hooks for the plugin.
+	 * @var      Rest_Api_Comment_Loader    $loader    Maintains and registers all hooks for the plugin.
 	 */
 	protected $loader;
 
@@ -67,12 +67,12 @@ class Wp_Rest_Comment {
 	 * @since    1.0.0
 	 */
 	public function __construct() {
-		if (defined('WP_REST_COMMENT_VERSION')) {
-			$this->version = WP_REST_COMMENT_VERSION;
+		if (defined('REST_API_COMMENT_VERSION')) {
+			$this->version = REST_API_COMMENT_VERSION;
 		} else {
 			$this->version = '1.0.1';
 		}
-		$this->plugin_name = 'wp-rest-comment';
+		$this->plugin_name = 'rest-api-comment';
 
 		$this->load_dependencies();
 		$this->set_locale();
@@ -86,10 +86,10 @@ class Wp_Rest_Comment {
 	 *
 	 * Include the following files that make up the plugin:
 	 *
-	 * - Wp_Rest_comment_Loader. Orchestrates the hooks of the plugin.
-	 * - Wp_Rest_comment_i18n. Defines internationalization functionality.
-	 * - Wp_Rest_comment_Admin. Defines all hooks for the admin area.
-	 * - Wp_Rest_comment_Public. Defines all hooks for the public side of the site.
+	 * - Rest_Api_comment_Loader. Orchestrates the hooks of the plugin.
+	 * - Rest_Api_comment_i18n. Defines internationalization functionality.
+	 * - Rest_Api_comment_Admin. Defines all hooks for the admin area.
+	 * - Rest_Api_comment_Public. Defines all hooks for the public side of the site.
 	 *
 	 * Create an instance of the loader which will be used to register the hooks
 	 * with WordPress.
@@ -103,26 +103,26 @@ class Wp_Rest_Comment {
 		 * The class responsible for orchestrating the actions and filters of the
 		 * core plugin.
 		 */
-		require_once plugin_dir_path(dirname(__FILE__)) . 'includes/class-wp-rest-comment-loader.php';
+		require_once plugin_dir_path(dirname(__FILE__)) . 'includes/class-rest-api-comment-loader.php';
 
 		/**
 		 * The class responsible for defining internationalization functionality
 		 * of the plugin.
 		 */
-		require_once plugin_dir_path(dirname(__FILE__)) . 'includes/class-wp-rest-comment-i18n.php';
+		require_once plugin_dir_path(dirname(__FILE__)) . 'includes/class-rest-api-comment-i18n.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the admin area.
 		 */
-		require_once plugin_dir_path(dirname(__FILE__)) . 'admin/class-wp-rest-comment-admin.php';
+		require_once plugin_dir_path(dirname(__FILE__)) . 'admin/class-rest-api-comment-admin.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the public-facing
 		 * side of the site.
 		 */
-		require_once plugin_dir_path(dirname(__FILE__)) . 'public/class-wp-rest-comment-public.php';
+		require_once plugin_dir_path(dirname(__FILE__)) . 'public/class-rest-api-comment-public.php';
 
-		$this->loader = new Wp_Rest_Comment_Loader();
+		$this->loader = new Rest_Api_Comment_Loader();
 
 	}
 
@@ -137,7 +137,7 @@ class Wp_Rest_Comment {
 	 */
 	private function set_locale() {
 
-		$plugin_i18n = new Wp_Rest_Comment_i18n();
+		$plugin_i18n = new Rest_Api_Comment_i18n();
 
 		$this->loader->add_action('plugins_loaded', $plugin_i18n, 'load_plugin_textdomain');
 
@@ -152,7 +152,7 @@ class Wp_Rest_Comment {
 	 */
 	private function define_admin_hooks() {
 
-		$plugin_admin = new Wp_Rest_Comment_Admin($this->get_plugin_name(), $this->get_version());
+		$plugin_admin = new Rest_Api_Comment_Admin($this->get_plugin_name(), $this->get_version());
 
 		// Adds Admin Menu for comment creation
 		// $this->loader->add_action('admin_menu', $plugin_admin, 'add_settings_menu');
@@ -171,7 +171,7 @@ class Wp_Rest_Comment {
 	 */
 	private function define_public_hooks() {
 
-		$plugin_public = new Wp_Rest_Comment_Public($this->get_plugin_name(), $this->get_version());
+		$plugin_public = new Rest_Api_Comment_Public($this->get_plugin_name(), $this->get_version());
 
 		// Adds REST API Route for comment creation
 		$this->loader->add_action('rest_api_init', $plugin_public, 'add_api_route');
@@ -205,7 +205,7 @@ class Wp_Rest_Comment {
 	 * The reference to the class that orchestrates the hooks with the plugin.
 	 *
 	 * @since     1.0.0
-	 * @return    Wp_Rest_Comment_Loader    Orchestrates the hooks of the plugin.
+	 * @return    Rest_Api_Comment_Loader    Orchestrates the hooks of the plugin.
 	 */
 	public function get_loader() {
 		return $this->loader;

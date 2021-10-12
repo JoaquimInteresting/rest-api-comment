@@ -6,8 +6,8 @@
  * @link       https://appsdabanda.com
  * @since      1.0.0
  *
- * @package    Wp_Rest_comment
- * @subpackage Wp_Rest_comment/includes
+ * @package    Rest_api_comment
+ * @subpackage Rest_api_comment/includes
  */
 
 /**
@@ -16,11 +16,11 @@
  * This class defines all code necessary to run during the plugin's activation.
  *
  * @since      1.0.0
- * @package    Wp_Rest_comment
- * @subpackage Wp_Rest_comment/includes
+ * @package    Rest_api_comment
+ * @subpackage Rest_api_comment/includes
  * @author     Workcompany, Appsdabanda, joaquiminteresting <support@appsdabanda.com>
  */
-class Wp_Rest_Comment_Deactivator {
+class Rest_api_Comment_Deactivator {
 
 	/**
 	 * Short Description. (use period)

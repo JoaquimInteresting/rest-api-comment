@@ -9,8 +9,8 @@
  * @link       https://sk8.tech
  * @since      1.0.0
  *
- * @package    Wp_Rest_comment
- * @subpackage Wp_Rest_comment/includes
+ * @package    Rest_api_comment
+ * @subpackage Rest_api_comment/includes
  */
 
 /**
@@ -20,11 +20,11 @@
  * so that it is ready for translation.
  *
  * @since      1.0.0
- * @package    Wp_Rest_comment
- * @subpackage Wp_Rest_comment/includes
+ * @package    Rest_api_comment
+ * @subpackage Rest_api_comment/includes
  * @author     Workcompany, Appsdabanda, joaquiminteresting <support@appsdabanda.com>
  */
-class Wp_Rest_Comment_i18n {
+class Rest_Api_Comment_i18n {
 
 	/**
 	 * Load the plugin text domain for translation.
@@ -34,7 +34,7 @@ class Wp_Rest_Comment_i18n {
 	public function load_plugin_textdomain() {
 
 		load_plugin_textdomain(
-			'wp-rest-comment',
+			'rest-api-comment',
 			false,
 			dirname(dirname(plugin_basename(__FILE__))) . '/languages/'
 		);

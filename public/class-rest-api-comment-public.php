@@ -19,7 +19,7 @@
  * @subpackage Rest_Api_Comment/public
  * @author     Workcompany <support@appsdabanda.com>
  */
-class Wp_Rest_Comment_Public {
+class Rest_Api_Comment_Public {
 
 	/**
 	 * The ID of this plugin.
@@ -450,7 +450,7 @@ class Wp_Rest_Comment_Public {
 		 * class.
 		 */
 
-		wp_enqueue_style($this->plugin_name, plugin_dir_url(__FILE__) . 'css/wp-rest-comment-public.css', array(), $this->version, 'all');
+		wp_enqueue_style($this->plugin_name, plugin_dir_url(__FILE__) . 'css/rest-api-comment-public.css', array(), $this->version, 'all');
 
 	}
 
@@ -473,7 +473,7 @@ class Wp_Rest_Comment_Public {
 		 * class.
 		 */
 
-		wp_enqueue_script($this->plugin_name, plugin_dir_url(__FILE__) . 'js/wp-rest-comment-public.js', array('jquery'), $this->version, false);
+		wp_enqueue_script($this->plugin_name, plugin_dir_url(__FILE__) . 'js/rest-api-comment-public.js', array('jquery'), $this->version, false);
 
 	}
 }

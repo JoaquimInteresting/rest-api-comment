@@ -20,7 +20,7 @@
  * @subpackage Rest_Api_Comment/admin
  * @author     Workcompany, Appsdabanda, joaquiminteresting <support@appsdabanda.com>
  */
-class Wp_Rest_Comment_Admin {
+class Rest_Api_Comment_Admin {
 
 	/**
 	 * The ID of this plugin.
@@ -73,7 +73,7 @@ class Wp_Rest_Comment_Admin {
 		 * class.
 		 */
 
-		wp_enqueue_style($this->plugin_name, plugin_dir_url(__FILE__) . 'css/wp-rest-comment-admin.css', array(), $this->version, 'all');
+		wp_enqueue_style($this->plugin_name, plugin_dir_url(__FILE__) . 'css/rest-api-comment-admin.css', array(), $this->version, 'all');
 
 	}
 
@@ -96,7 +96,7 @@ class Wp_Rest_Comment_Admin {
 		 * class.
 		 */
 
-		wp_enqueue_script($this->plugin_name, plugin_dir_url(__FILE__) . 'js/wp-rest-comment-admin.js', array('jquery'), $this->version, false);
+		wp_enqueue_script($this->plugin_name, plugin_dir_url(__FILE__) . 'js/rest-api-comment-admin.js', array('jquery'), $this->version, false);
 
 	}
 

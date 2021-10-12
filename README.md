@@ -165,9 +165,3 @@ Nothing to worry!
 If there is any thing to say about the plugin fill free to [contact us](mailto:sopport@appsdabanda.com). We'll to get in touch.
 ## License
 [GPLv2](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
-
-
-
-
-
-
