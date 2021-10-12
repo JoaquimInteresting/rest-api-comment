@@ -138,9 +138,9 @@ Please create a ticket on the [support team](mailto:sopport@appsdabanda.com) or 
 
 ## Screenshots
 
-An sample REST API POST request using [REST API Comment](https://github.com/JoaquimInteresting/wp-rest-comment.api).
+An sample REST API POST request using [REST API Comment](https://github.com/JoaquimInteresting/rest-api-comment.api).
 
-<img src="assets/screenshot-1.png">
+<img src="./assets/screenshot-1.png">
 
 ## Changelog
 
