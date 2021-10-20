@@ -126,14 +126,14 @@ To reply a comment follow you just need to add the field **parent** for the pare
 
 == Frequently Asked Questions ==
 
-= Why do I need REST API Comments? = 
+= Why do I need REST API Comment? = 
 If you're planning on using your WordPress news website/blog as a Backend, and you're consuming RESTful api, you'll most probably need to **Create comments** and **Reply comments** via REST API. This is precisely what this plugin does.
 
 = Is it secure? =
 Great question! For the time being, this plugin just provides the same experience any wordpress site provides by default witch is allowing any one to comment a post requiring basic infos such as: name, email address and the content, without authentication. All secure were followed based on the wordpress core code.
 
 = There's a bug, what do I do? =
-Please create a ticket on the [support team](mailto:sopport@appsdabanda.com) or open an issue in [github repository](https://github.com/JoaquimInteresting/wp-rest-comment). We'll get back to you ASAP.
+Please create a ticket on the [support team](mailto:sopport@appsdabanda.com) or open an issue in [github repository](https://github.com/JoaquimInteresting/rest-api-comment). We'll get back to you ASAP.
 
 == Screenshots ==
 
