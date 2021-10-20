@@ -16,7 +16,7 @@
     * along with REST API Comment. If not, see http://www.gnu.org/licenses/gpl-2.0.html
     *
     * @package           rest-api-comment
-    * @author            joaquiminteresting
+    * @author            Joaquim Domingos António
     * @copyright         2021 Appsdabanda
     * @license           GPL - 2.0-or-later
     * @since             1.0.0
@@ -27,7 +27,7 @@
     * Requires at least: 4.7.0
     * Tested up to:      5.8.1
     * Requires PHP:      7.0
-    * Author:            joaquiminteresting
+    * Author:            Joaquim Domingos António
     * Author URI:        https://appsdabanda.com
     * License:           GPL v2 or later
     * License URI:       http://www.gnu.org/licenses/gpl-2.0.html
