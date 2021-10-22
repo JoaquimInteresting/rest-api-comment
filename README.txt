@@ -152,10 +152,6 @@ Please create a ticket on the [support team](mailto:sopport@appsdabanda.com) or 
 * Create comment
 * Reply comment 
 
-== Upgrade Notice ==
-
-Nothing to worry! 
-
 == Contact == 
 
 If there is any thing to say about the plugin fill free to [contact us](mailto:sopport@appsdabanda.com).

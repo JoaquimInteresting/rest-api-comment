@@ -138,9 +138,9 @@ Please create a ticket on the [support team](mailto:sopport@appsdabanda.com) or 
 
 ## Screenshots
 
-An sample REST API POST request using [REST API Comment](https://github.com/JoaquimInteresting/rest-api-comment.api).
+1. An sample REST API POST request using [REST API Comment](https://github.com/JoaquimInteresting/rest-api-comment.api).
 
-<img src="./assets/screenshot-1.png">
+
 
 ## Changelog
 
@@ -156,12 +156,7 @@ An sample REST API POST request using [REST API Comment](https://github.com/Joaq
 * Create comment
 * Reply comment 
 
-## Upgrade Notice
-
-Nothing to worry! 
-
 ## Contact 
 
 If there is any thing to say about the plugin fill free to [contact us](mailto:sopport@appsdabanda.com). We'll to get in touch.
-## License
-[GPLv2](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
+
