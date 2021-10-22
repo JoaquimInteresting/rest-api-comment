@@ -102,7 +102,7 @@ HTTP 201 Created
 
 ### Reply a comment
 
-To reply a comment follow you just need to add the field **parent** for the parent comment to the **JSON body**
+To reply a comment you just need to add the field **parent** for the parent comment to the **JSON body**
 
 ```Json
 {
@@ -134,13 +134,11 @@ If you're planning on using your WordPress news website/blog as a Backend, and y
 Great question! For the time being, this plugin just provides the same experience any wordpress site provides by default witch is allowing any one to comment a post requiring basic infos such as: name, email address and the content, without authentication. All secure were followed based on the wordpress core code.
 
 ### There's a bug, what do I do? 
-Please create a ticket on the [support team](mailto:sopport@appsdabanda.com) or open an issue in [github repository](https://github.com/JoaquimInteresting/rest-api-comment). We'll get back to you ASAP.
+Please create a ticket on the [support team](mailto:sopport@appsdabanda.com) or open an issue in [github repository](https://github.com/JoaquimInteresting/rest-api-comment). We'll get back to you as soon as possible.
 
 ## Screenshots
 
 1. An sample REST API POST request using [REST API Comment](https://github.com/JoaquimInteresting/rest-api-comment.api).
-
-
 
 ## Changelog
 

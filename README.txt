@@ -1,6 +1,5 @@
 == REST API Comment ==
 Contributors: joaquiminteresting
-Donate link: https://appsdabanda.com/donate/
 Tags: wp, rest, api, rest api, comment, json
 Requires at least: 4.7.0
 Tested up to: 5.8.1
@@ -101,7 +100,7 @@ HTTP 201 Created
 
 2. Reply a comment
 
-To reply a comment follow you just need to add the field **parent** for the parent comment to the **JSON body**
+To reply a comment you just need to add the field **parent** for the parent comment to the **JSON body**
 
 ```Json
 {
@@ -133,11 +132,11 @@ If you're planning on using your WordPress news website/blog as a Backend, and y
 Great question! For the time being, this plugin just provides the same experience any wordpress site provides by default witch is allowing any one to comment a post requiring basic infos such as: name, email address and the content, without authentication. All secure were followed based on the wordpress core code.
 
 = There's a bug, what do I do? =
-Please create a ticket on the [support team](mailto:sopport@appsdabanda.com) or open an issue in [github repository](https://github.com/JoaquimInteresting/rest-api-comment). We'll get back to you ASAP.
+Please create a ticket on the [support team](mailto:sopport@appsdabanda.com) or open an issue in [github repository](https://github.com/JoaquimInteresting/rest-api-comment). We'll get back to you as soon as possible.
 
 == Screenshots ==
 
-1. This Screenshot is a sample REST API POST request using REST API Comment, file name: screenshot-1.png, Located in /assets directory.
+1. This Screenshot is a sample REST API POST request using REST API Comment.
 
 == Changelog ==
 
