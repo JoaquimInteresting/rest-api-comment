@@ -20,17 +20,19 @@
  * @subpackage Rest_apicomment/includes
  * @author     Workcompany, Appsdabanda, joaquiminteresting <support@appsdabanda.com>
  */
-class Rest_Api_Comment_Activator {
+if(! class_exists('Rest_Api_Comment_Activator')){
+	class Rest_Api_Comment_Activator {
 
-	/**
-	 * Short Description. (use period)
-	 *
-	 * Long Description.
-	 *
-	 * @since    1.0.0
-	 */
-	public static function activate() {
+		/**
+		 * Short Description. (use period)
+		 *
+		 * Long Description.
+		 *
+		 * @since    1.0.0
+		 */
+		public static function activate() {
+
+		}
 
 	}
-
 }

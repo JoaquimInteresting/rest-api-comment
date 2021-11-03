@@ -20,17 +20,19 @@
  * @subpackage Rest_api_comment/includes
  * @author     Workcompany, Appsdabanda, joaquiminteresting <support@appsdabanda.com>
  */
-class Rest_api_Comment_Deactivator {
+if(! class_exists('Rest_api_Comment_Deactivator')){
+	class Rest_api_Comment_Deactivator {
 
-	/**
-	 * Short Description. (use period)
-	 *
-	 * Long Description.
-	 *
-	 * @since    1.0.0
-	 */
-	public static function deactivate() {
+		/**
+		 * Short Description. (use period)
+		 *
+		 * Long Description.
+		 *
+		 * @since    1.0.0
+		 */
+		public static function deactivate() {
+
+		}
 
 	}
-
 }

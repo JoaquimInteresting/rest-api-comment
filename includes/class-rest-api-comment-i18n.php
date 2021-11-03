@@ -24,21 +24,23 @@
  * @subpackage Rest_api_comment/includes
  * @author     Workcompany, Appsdabanda, joaquiminteresting <support@appsdabanda.com>
  */
-class Rest_Api_Comment_i18n {
+if(! class_exists('Rest_Api_Comment_i18n')){
+	class Rest_Api_Comment_i18n {
 
-	/**
-	 * Load the plugin text domain for translation.
-	 *
-	 * @since    1.0.0
-	 */
-	public function load_plugin_textdomain() {
+		/**
+		 * Load the plugin text domain for translation.
+		 *
+		 * @since    1.0.0
+		 */
+		public function load_plugin_textdomain() {
 
-		load_plugin_textdomain(
-			'rest-api-comment',
-			false,
-			dirname(dirname(plugin_basename(__FILE__))) . '/languages/'
-		);
+			load_plugin_textdomain(
+				'rest-api-comment',
+				false,
+				dirname(dirname(plugin_basename(__FILE__))) . '/languages/'
+			);
+
+		}
 
 	}
-
 }

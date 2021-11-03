@@ -5,7 +5,7 @@
 * Requires at least: 4.7.0
 * Tested up to: 5.8.1
 * Requires PHP: 7.0
-* Stable tag: 1.0.1
+* Stable tag: 1.0.2
 * License: GPLv2 or later
 * License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -142,6 +142,9 @@ Please create a ticket on the [support team](mailto:sopport@appsdabanda.com) or 
 
 ## Changelog
 
+### 1.0.2
+
+* It prevents comments for posts with comment status 'closed'
 ### 1.0.1
 
 * Now it requires at least wordpress version 4.7
