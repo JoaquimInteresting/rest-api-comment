@@ -1,7 +1,7 @@
 == REST API Comment ==
 Contributors: joaquiminteresting
-Tags: wp, rest, api, rest api, comment, json
-Requires at least: 4.7.0
+Tags: wp, rest, api, rest api, comment, json, rest api comments, wordpress comments, posts, post comments, reply comments
+Requires at least: 5.5
 Tested up to: 5.8.1
 Requires PHP: 7.0
 Stable tag: 1.0.2
@@ -22,7 +22,7 @@ This plugin fulfils such requirement by extending the existing WordPress REST AP
 Requirements:
 
 **Minimum PHP version: 7.0**
-**Minimum Wordpress version: 4.7.0**
+**Minimum Wordpress version: 5.5**
 
 
 Installation:
@@ -59,7 +59,7 @@ With a **JSON body**, as shown bellow:
 {
 	"post": "Post ID",
 	"author_name": "Comment Author's name",
-	"author_name": "Comment Author's email",
+	"author_email": "Comment Author's email",
 	"content": "Comment content"
 }
 ```
@@ -70,7 +70,7 @@ The **content** may also be send as an object:
 {
 	"post": "Post ID",
 	"author_name": "Comment Author's name",
-	"author_name": "Comment Author's email",
+	"author_email": "Comment Author's email",
 	"content": {
         "raw":"Comment content"
     }
@@ -106,7 +106,7 @@ To reply a comment you just need to add the field **parent** for the parent comm
 {
 	"post": "Post ID",
 	"author_name": "Comment Author's name",
-	"author_name": "Comment Author's email",
+	"author_email": "Comment Author's email",
 	"content": "Comment content",
     "parent":"Comment parent ID"
 }
@@ -129,7 +129,7 @@ To reply a comment you just need to add the field **parent** for the parent comm
 If you're planning on using your WordPress news website/blog as a Backend, and you're consuming RESTful api, you'll most probably need to **Create comments** and **Reply comments** via REST API. This is precisely what this plugin does.
 
 = Is it secure? =
-Great question! For the time being, this plugin just provides the same experience any wordpress site provides by default witch is allowing any one to comment a post requiring basic infos such as: name, email address and the content, without authentication. All secure were followed based on the wordpress core code.
+Great question! For the time being, this plugin just provides the same experience any wordpress site provides by default witch is allowing any one to comment a post requiring basic infos such as: name, email address and the content, without authentication. All security was followed based on the wordpress core code.
 
 = There's a bug, what do I do? =
 Please create a ticket on the [support team](mailto:sopport@appsdabanda.com) or open an issue in [github repository](https://github.com/JoaquimInteresting/rest-api-comment). We'll get back to you as soon as possible.
@@ -142,6 +142,8 @@ Please create a ticket on the [support team](mailto:sopport@appsdabanda.com) or 
 
 = 1.0.2 =
 * It prevents comments for posts with comment status 'closed'
+* It prevents comments for posts with post status different from 'publish'
+* Now it requires at least wordpress version 5.5
 
 = 1.0.1 =
 * Now it requires at least wordpress version 4.7
@@ -157,4 +159,3 @@ Please create a ticket on the [support team](mailto:sopport@appsdabanda.com) or 
 == Contact == 
 
 If there is any thing to say about the plugin fill free to [contact us](mailto:sopport@appsdabanda.com).
-

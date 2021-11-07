@@ -119,6 +119,8 @@ if(! class_exists('Rest_Api_Comment_Public')){
 					return new WP_Error('rest_post_invalid_id',__( 'Invalid post ID.' ),array( 'status' => 404 ));
 				}else if( $post->comment_status=='closed'){
 					return new WP_Error( 'rest_comments_status_closed' ,__( 'This post does not allow comments' ),array( 'status' => 403 ));
+				}else if( $post->post_status != 'publish'){
+					return new WP_Error( 'rest_post_status_not_publish' ,__( 'Post status is not publish' ) , array( 'status' => 403));
 				}
 			}
 

@@ -24,7 +24,7 @@
     * Plugin Name:       REST API Comment
     * Description:       Create comments via REST API, this plugin allows comments from mobile, desktop and other web Applications
     * Version:           1.0.2
-    * Requires at least: 4.7.0
+    * Requires at least: 5.5
     * Tested up to:      5.8.1
     * Requires PHP:      7.0
     * Author:            Joaquim Domingos António
